@@ -59,7 +59,7 @@ public class ReadFromKafka {
 
 			@Override
 			public String map(String value) throws Exception {
-				return "Kafka and Flink says: " + value;
+				return value;
 			}
 		}).print();
 
